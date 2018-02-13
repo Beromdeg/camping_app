@@ -1,0 +1,38 @@
+<% include partials/header%>
+
+    <div class= 'ui fluid container'>    <!--maintaing the jumbotron contents-->
+            <h1 class = 'ui inverted green huge header'>Camping Sites</h1> 
+    	    <p>Handpicked camping sites!</p>
+    	    <p>
+    	        <a class = '' href = '/campsites/new'>Add new campsite!</a>
+    	    </p>
+	</div>
+    			
+
+    <div class= 'row text-center' style= 'display:flex; flex-wrap:wrap;'>
+        <% campsite.forEach(function(site){ %>
+            <div class= 'col-lg-3 col-sm-6'>
+                <div class= 'thumbnail'>
+                    <img src= '<%= site['image']%>' alt= 'image-i'>
+                    <div class = 'caption'>
+                        <h4><%=site['name']%></h4>
+                    </div>
+                    <p>
+                      <a class = 'btn btn-success btn-sm' href = '/campsites/<%= site._id%>'>More Info!</a> <!--use id created for /:id & show route i.e./campsites/:id-->
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href = '/campsites/new'>Add new campsite!</a></li>
+            <li><a href = '/'>Go Back!</a></li>
+        </ul>
+    </div>
+    
+</div> 
+
+
+<% include partials/footer%>

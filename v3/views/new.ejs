@@ -1,0 +1,23 @@
+<% include partials/header%>
+<div class= 'ui main text container segment'>
+    <div class = 'ui huge header'>Add New Camping Site</div>
+    
+    <form class = 'ui form' action = '/campsites' method = 'POST'>
+        <div class = 'field'>
+            <label>Name</label>
+            <input type = 'text' placeholder = 'site name' name = 'name'>
+        </div>
+        <div class = 'field'>
+            <label>Image(url)</label>
+            <input type = 'text' placeholder = 'image url' name = 'image'>
+        </div>
+        <div class = 'field'>
+            <label>Description Content:</label>
+            <textarea name = 'description' rows ='10' cols = '10'></textarea>
+        </div>
+        <button class = 'ui inverted teal button'>ADD CAMPSITE</button>
+    </form>
+    <a href = '/campsites'>Go Back</a>
+</div>
+
+<% include partials/footer%>
