@@ -9,7 +9,7 @@ var express                 = require("express"),
 
 //==============================
     //connect to ur mongoose and mlab database hosting
-    //mongoose.connect('mongodb://<username:password>@ds<>.mlab.com:57627/<application_name>');
+    //mongoose.connect('mongodb://<username:password>@ds<  >.mlab.com:57627/<application_name>');
 //==============================
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
