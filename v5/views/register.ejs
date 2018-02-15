@@ -1,0 +1,37 @@
+<% include partials/header.ejs%>    
+    <h1>Sign up form</h1>
+    <form action = '/register' method = 'POST'>
+        <input type = 'text' name = 'username' palceholder = 'username'>
+        <input type = 'password' name = 'password' palceholder = 'password'>
+        <button>Sign Up</button>
+    </form>
+    <div>
+        <li><a href = '/register'>Sign Up!</a></li>
+        <li><a href = '/login'>Log In!</a></li>
+        <li><a href = '/logout'>Log Out!</a></li>
+    </div>
+
+<% include partials/footer.ejs%>    
+        
+<!--<div class="ui inverted segment">
+  <form class="ui inverted form" action = '/register' method="POST">
+    <div class="two fields">
+      <div class="required field">
+        <label>Username</label>
+        <input placeholder="username" name = 'username' type="text">
+      </div>
+      <div class="required field">
+        <label>Password</label>
+        <input placeholder="password" name = 'password' type="password">
+      </div>
+    </div>
+    <div class="inline required field">
+      <div class="ui checkbox">
+        <input type="checkbox" tabindex="0" class="hidden">
+        <label>I agree to the terms and conditions</label>
+      </div>
+    </div>
+    <div class="ui submit button">Submit</div>
+  </form>
+</div>-->
+

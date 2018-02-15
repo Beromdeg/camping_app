@@ -1,0 +1,41 @@
+<% include partials/header.ejs%>
+<!--<h2> currentUser%></h2> test for currentUser passed in /campsite, can access currentUser throug header -->
+<div class = "container">
+    <!--header tag similar to the div tag will have introductory aids, include class jumbotron-->
+    <header class = "jumbotron">
+        <div class= 'container'>    <!--maintaing the jumbotron contents-->
+            <h1>Camping Sites</h1> 
+    	    <p>Handpicked camping sites!</p>
+    	    <p>
+    	        <a class = 'btn btn-primary btn-lg' href = '/campsites/new'>Add new campsite!</a>
+    	    </p>
+	    </div>
+    </header>			
+
+    <div class= 'row text-center' style= 'display:flex; flex-wrap:wrap;'>
+        <% campsite.forEach(function(site){ %>
+            <div class= 'col-lg-3 col-sm-6'>
+                <div class= 'thumbnail'>
+                    <img src= '<%= site['image']%>' alt= 'image-i'>
+                    <div class = 'caption'>
+                        <h4><%=site['name']%></h4>
+                    </div>
+                    <p>
+                      <a class = 'btn btn-success btn-sm' href = '/campsites/<%= site._id%>'>More Info!</a> <!--use id created for /:id & show route i.e./campsites/:id-->
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href = '/campsites/new'>Add new campsite!</a></li>
+            <li><a href = '/'>Go Back!</a></li>
+        </ul>
+    </div>
+    
+</div>  <!--container-->
+
+
+<% include partials/footer.ejs%>
