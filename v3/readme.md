@@ -1,4 +1,4 @@
-#v2: Second version for camping sites application
+#v3: Second version for camping sites application
 
 #Using Semantic-UI
 

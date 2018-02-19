@@ -1,4 +1,4 @@
-#v2: Second version for camping sites application
+#v5: Second version for camping sites application
 
 #Add mongodb
     * use database to add new campsites instead of hard coding
