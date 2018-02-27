@@ -11,11 +11,8 @@
     *show/hide auth links in navbar correctly
     (Eg: signed in as username & logout)
 
-#Add authentication routes
-    *show/hide auth links in navbar correctly
-    (Eg: signed in as username & logout)
 #Add middleware
-
+    
 #Show Page 
     * 7 RESTFUL ROUTES //order of ROUTES is important
     
