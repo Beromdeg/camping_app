@@ -7,10 +7,8 @@ var express                 = require("express"),
     passporLocalMongoose    = require("passport-local-mongoose"),
     User                    = require("./model/user.js")
 
-//==============================
-    //connect to ur mongoose and mlab database hosting
-    //mongoose.connect('mongodb://<username:password>@ds<  >.mlab.com:57627/<application_name>');
-//==============================
+//mongoose.connect('mongodb://localhost/camping_app'); //creates camping_app DB inside the mongodb
+mongoose.connect('mongodb://sudha:hommer@ds257627.mlab.com:57627/camp_app'); //using database  on mlab<username:password> = <sudha:hommer>
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 

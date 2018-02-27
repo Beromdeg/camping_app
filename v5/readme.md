@@ -1,4 +1,4 @@
-#v5: Second version for camping sites application
+#v5: fith version for camping sites application
 
 #Add mongodb
     * use database to add new campsites instead of hard coding
@@ -10,6 +10,11 @@
 #Add authentication routes
     *show/hide auth links in navbar correctly
     (Eg: signed in as username & logout)
+
+#Add authentication routes
+    *show/hide auth links in navbar correctly
+    (Eg: signed in as username & logout)
+#Add middleware
 
 #Show Page 
     * 7 RESTFUL ROUTES //order of ROUTES is important
